@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "minhaFonte";
+    src: url(fonts/WizardWorldSimplified-Kxr7.ttf);
+}
+
+@font-face {
+    font-family: "lumosfont";
+    src: url("fonts/Lumoslatino-XA8K.ttf");
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 100%;
+    background: white;
+    background-size:100%
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+    background-color: #222F5B;
+}
+
+.cabecalho-logo {
+    width: 90px;
+}
+
+.cabecalho-menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho-menu-item {
+    font-family: "minhaFonte";
+    font-size: 1em;
+    color: gold;
+    font-weight: normal;
+}
+
+a.cabecalho-menu-item:hover{
+    color: gold;
+    /*-webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #946B2D;*/
+    transform: scale(1.1);
+}
+
+.conteudo {
+    border-top: 0.4px solid gray;
+    margin-bottom: 48px;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo-principal-escrito-titulo {
+    font-family: 'minhaFonte';
+    font-size: 4em;
+    color: #222F5B;
+    font-weight: normal;
+}
+.conteudo-principal-escrito-subtitulo {
+    font-family: 'minhaFonte';
+    font-weight: normal;
+    font-size: 1.5em;
+}
+
+.conteudo-principal-escrito-botao {
+    font-family: 'minhaFonte';
+    width:  150px;
+    height: 60px;
+    border: none;
+    border-radius: 35px;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    font-size: 1em;
+    background-color: #222F5B;
+    color: aliceblue;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    transform: scale(1.2);
+    transition: 1000ms;
+}
+
+.conteudo-principal-imagem {
+    height: 300px;
+    margin-right: 40px ;
+}
+
+.conteudo-secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.conteudo-secundario-titulo {
+    font-family: "minhaFonte";
+    font-size: 2em;
+    border-top: 2.8px solid #222F5B;
+    border-width: 1px;
+    padding: 48px;
+}
+.conteudo-secundario-paragrafo {
+    font-family: "lumosfont";
+    text-align: justify;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.rodape-imagem {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+}
+
+footer {
+    background-color: #222F5B;
+}
